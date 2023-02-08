@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Sliders</title>
+  </head>
+  <body>
+    <!--Prep Time Slider-->
+
+    <section>
+      <label for="prep-time" tabindex="0">Prep Time:</label>
+      <input
+        type="range"
+        id="prep-time"
+        aria-label="prep-time-slider"
+        name="prep-time"
+        aria-valuemin="5"
+        aria-valuemax="30"
+        step="5"
+      />
+    </section>
+
+    <!--Cook Time Slider-->
+
+    <section>
+      <label for="cook-time" tabindex="0">Cook Time: </label>
+      <input
+        type="range"
+        id="cook-time"
+        aria-label="cook-time-slider"
+        name="cook-time"
+        aria-valuemin="4"
+        aria-valuemax="120"
+        step="4"
+      />
+    </section>
+
+    <!--Number of Ingredients Slider-->
+    <section>
+      <label for="number-of-ingredients" tabindex="0"
+        >Number of Ingredients:
+      </label>
+      <input
+        type="range"
+        id="number-of-ingredients"
+        aria-label="number-of-ingredients"
+        name="number-of-ingredients"
+        aria-valuemin="3"
+        aria-valuemax="25"
+        step="1"
+      />
+    </section>
+  </body>
+</html>
