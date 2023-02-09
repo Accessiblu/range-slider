@@ -4,51 +4,65 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Recipe Sliders</title>
   </head>
   <body>
     <!--Prep Time Slider-->
+    <section class="prep-time">
+      <h3 tabindex="0">Prep Time:</h3>
+    </section>
+    <section for="time" tabindex="0" 
+        >Range: 5 to 30 Minutes</section>
 
-    <section>
-      <label for="prep-time" tabindex="0">Prep Time:</label>
       <input
         type="range"
-        id="prep-time"
-        aria-label="prep-time-slider"
+        id="time"
         name="prep-time"
-        aria-valuemin="5"
-        aria-valuemax="30"
+        role="slider"
+        min="5"
+        max="30"
         step="5"
       />
     </section>
 
     <!--Cook Time Slider-->
+<section class="cook-time">
+      <h3 tabindex="0">Cook Time:</h3>
+    </section>
+    <section for="cook" tabindex="0" 
+        >Range: 4 to 120 Minutes</section>
 
     <section>
-      <label for="cook-time" tabindex="0">Cook Time: </label>
+      
       <input
         type="range"
         id="cook-time"
-        aria-label="cook-time-slider"
         name="cook-time"
-        aria-valuemin="4"
-        aria-valuemax="120"
+        role="slider"
+        min="4"
+        max="120"
         step="4"
       />
     </section>
 
     <!--Number of Ingredients Slider-->
-    <section>
-      <label for="number-of-ingredients" tabindex="0"
-        >Number of Ingredients:
-      </label>
+
+    <section class="number-of-ingredients">
+      <h3  tabindex="0">Number of Ingredients:</h3>
+    </section>
+    <section for="ingredients" tabindex="0" 
+        >Range: 3 to 25 </section>
+
+       <section>
+      
       <input
         type="range"
         id="number-of-ingredients"
-        aria-label="number-of-ingredients"
         name="number-of-ingredients"
-        aria-valuemin="3"
-        aria-valuemax="25"
+        role="slider"
+        min="3"
+        max="25"
         step="1"
       />
     </section>
