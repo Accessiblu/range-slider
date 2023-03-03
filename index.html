@@ -10,15 +10,15 @@
   <body>
     <!--Prep Time Slider-->
     <section class="prep-time">
-      <h3 tabindex="0">Prep Time:</h3>
+      <h3>Prep Time:</h3>
     </section>
-    <section for="time" tabindex="0" 
+    <section for="time" tabindex="0" aria-label="prep-time Range: 5 to 30 Minutes"
         >Range: 5 to 30 Minutes</section>
 
       <input
         type="range"
-        id="time"
-        name="prep-time"
+        id="prep-time"
+        aria-label="prep-time"
         role="slider"
         min="5"
         max="30"
@@ -29,9 +29,9 @@
 
     <!--Cook Time Slider-->
 <section class="cook-time">
-      <h3 tabindex="0">Cook Time:</h3>
+      <h3>Cook Time:</h3>
     </section>
-    <section for="cook" tabindex="0" 
+    <section for="cook" tabindex="0" aria-label="cook-time Range: 4 to 120 minutes"
         >Range: 4 to 120 Minutes</section>
 
     <section>
@@ -39,7 +39,7 @@
       <input
         type="range"
         id="cook-time"
-        name="cook-time"
+        aria-label="cook-time"
         role="slider"
         min="4"
         max="120"
@@ -51,9 +51,9 @@
     <!--Number of Ingredients Slider-->
 
     <section class="number-of-ingredients">
-      <h3  tabindex="0">Number of Ingredients:</h3>
+      <h3>Number of Ingredients:</h3>
     </section>
-    <section for="ingredients" tabindex="0" 
+    <section for="ingredients" tabindex="0" aria-label="number-of-ingredients Range: 3 to 25"
         >Range: 3 to 25 </section>
 
        <section>
@@ -61,7 +61,7 @@
       <input
         type="range"
         id="number-of-ingredients"
-        name="number-of-ingredients"
+        aria-label="number-of-ingredients"
         role="slider"
         min="3"
         max="25"
