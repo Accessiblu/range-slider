@@ -4,71 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
 
     <title>Recipe Sliders</title>
   </head>
+
   <body>
     <!--Prep Time Slider-->
-    <section class="prep-time">
-      <p>Prep Time:</p>
-    </section>
-    <section for="time" tabindex="0" 
-        ><span class="aria-invisible">Prep Time</span>Range: 5 to 30 Minutes</section>
-
+    <section class="wrapper">
+      <label for="prep" tabindex="0">Prep Time: Range 5 to 30 Minutes</label>
       <input
-        
-        type="range"
-        id="prep-time"
-        aria-label="prep-time"
         role="slider"
+        aria-label="prep-time"
+        type="range"
         min="5"
         max="30"
-        step="1"
-        value="1"
+        id="prep"
       />
     </section>
 
     <!--Cook Time Slider-->
-<section class="cook-time">
-      <p>Cook Time:</p>
-    </section>
-    <section for="cook" tabindex="0" 
-        ><span class="aria-invisible">Cook Time</span>Range: 4 to 120 Minutes</section>
-
-    <section>
-      
-      <input
-        type="range"
-        id="cook-time"
-        aria-label="cook-time"
-        role="slider"
-        min="4"
-        max="120"
-        step="1"
-         value="1"
-      />
+    <section class="wrapper">
+      <label for="cook" tabindex="0">Cook Time: Range 4 to 120 Minutes</label>
+      <input aria-label="cook-time" type="range" min="4" max="120" id="cook" />
     </section>
 
     <!--Number of Ingredients Slider-->
-
-    <section class="number-of-ingredients">
-      <p>Number of Ingredients:</p>
-    </section>
-    <section for="ingredients" tabindex="0" 
-        ><span class="aria-invisible">Number of Ingredients</span>Range: 3 to 25 </section>
-
-       <section>
-      
+    <section class="wrapper">
+      <label for="ingredients" tabindex="0"
+        >Number of Ingredients: Range 3 to 25 Minutes</label
+      >
       <input
+        aria-label="number of ingredients"
         type="range"
-        id="number-of-ingredients"
-        aria-label="number-of-ingredients"
-        role="slider"
         min="3"
         max="25"
-        step="1"
-         value="1"
+        id="ingredients"
       />
     </section>
   </body>
